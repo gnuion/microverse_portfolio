@@ -12,6 +12,8 @@
 
 [Live Demo Link](https://gnuion.github.io/microverse_portfolio/)
 
+![screenshot](./screenshot1.png)
+
 **Note: Please view it as mobile**
 
 ## Getting Started
@@ -43,8 +45,8 @@ You can deploy static HTML from any CDN.
 
 👤 **gnuion**
 
-- GitHub: [@githubhandle](https://github.com/gnuion)
-- Twitter: [@twitterhandle](https://twitter.com/gnuion)
+- GitHub: [@gnuion](https://github.com/gnuion)
+- Twitter: [@gnuion](https://twitter.com/gnuion)
 
 ## 🤝 Contributing
 
