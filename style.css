@@ -23,6 +23,11 @@ body {
   font-size: 20px;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .headline {
   position: relative;
   padding: 4rem 2rem;
