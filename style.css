@@ -56,7 +56,8 @@ h1 span.highlight {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
+  clear: both;
   background-color: #36b37f;
   color: white;
   font-size: 17px;
@@ -170,14 +171,16 @@ ul.social {
 }
 
 .work .categories {
+  margin: 0 auto;
   padding: 0.5rem;
 }
 
 .work .categories li {
   font-size: 12px;
   font-weight: 600;
-  display: inline-block;
-  background-color: #ebf0ee;
+  background-color: #8bd5df;
+  float: left;
+  white-space: nowrap;
   border-radius: 4px;
   padding: 0.5rem 0.8rem;
   margin: 0.2rem 0.1rem;
