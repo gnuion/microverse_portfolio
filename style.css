@@ -230,3 +230,19 @@ ul.social {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.form > input,
+textarea {
+  outline: none;
+  display: block;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+.contact .btn {
+  margin: 1rem auto;
+}
