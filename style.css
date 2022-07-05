@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
@@ -241,6 +241,11 @@ textarea {
   margin: 1.5rem auto;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid #008552;
 }
 
 .contact .btn {
