@@ -62,7 +62,7 @@ h1 span.highlight {
   font-size: 17px;
   padding: 12px;
   border-radius: 4px;
-  box-shadow: none;
+  border: none;
 }
 
 .btn:hover {
@@ -184,6 +184,10 @@ ul.social {
   list-style-type: none;
 }
 
+.badge-container li {
+  cursor: pointer;
+}
+
 .card .btn {
   margin-top: 1rem;
 }
@@ -249,5 +253,4 @@ textarea {
 }
 
 .contact .btn {
-  margin: 1rem auto;
 }
