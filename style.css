@@ -43,6 +43,10 @@ p {
   line-height: 1.2;
 }
 
+ul {
+  padding: 0;
+}
+
 .seperator {
   height: 4px;
   width: 48px;
