@@ -173,6 +173,10 @@ ul.social {
   padding: 0.5rem;
 }
 
+.badge-container li {
+  cursor: pointer;
+}
+
 .work .categories li {
   font-size: 12px;
   font-weight: 600;
@@ -182,10 +186,6 @@ ul.social {
   padding: 0.5rem 0.8rem;
   margin: 0.2rem 0.1rem;
   list-style-type: none;
-}
-
-.badge-container li {
-  cursor: pointer;
 }
 
 .card .btn {
@@ -238,7 +238,6 @@ ul.social {
 .form > input,
 textarea {
   outline: none;
-  display: block;
   width: 100%;
   display: block;
   padding: 1rem;
