@@ -1,7 +1,32 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact h2 {
+  flex: 1;
+  margin: 1rem;
+}
+
+.contact form {
+  flex: 1.5;
+}
+
 .contact .btn {
   margin-bottom: 2rem;
 }
 
 .contact p {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .contact {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact .btn {
+    display: block;
+  }
 }

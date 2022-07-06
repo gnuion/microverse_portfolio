@@ -14,3 +14,29 @@
   font-weight: 600;
   font-size: 20px;
 }
+
+.toolbar .menu {
+  display: none;
+}
+
+@media screen and (min-width: 40rem) {
+  .toolbar {
+    justify-content: center;
+  }
+
+  .toolbar .logo {
+    display: none;
+  }
+
+  .toolbar .toggle-button {
+    display: none;
+  }
+
+  .toolbar .menu {
+    justify-content: space-between;
+    display: inline-flex;
+    width: 15rem;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+}

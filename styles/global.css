@@ -15,7 +15,9 @@ a {
 }
 
 section {
+  margin: 0 auto;
   padding: 2rem 2rem;
+  max-width: 80rem;
 }
 
 h1 {
@@ -102,4 +104,22 @@ span.highlight {
   color: #505f79;
   font-size: 1.5rem;
   margin: 0 0.3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

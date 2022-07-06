@@ -1,13 +1,14 @@
+.about p {
+  max-width: 50rem;
+  display: block;
+  margin: 0 auto;
+}
 .about .btn {
   margin-top: 2rem;
 }
 
 .about .container {
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 0;
 }
 
 .about .card {
