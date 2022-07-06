@@ -1,0 +1,33 @@
+.work ul {
+  margin: 1rem 0.8rem;
+}
+
+.work li {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  margin: 0.2rem 0.1rem;
+}
+
+.work .card {
+  position: relative;
+  border: solid rgb(202, 202, 202) 1px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.work img {
+  height: 33vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work .card .content {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  margin-top: -1rem;
+  padding: 1rem 0;
+  border-radius: 8px;
+}

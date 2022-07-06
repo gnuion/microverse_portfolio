@@ -1,0 +1,51 @@
+.contact .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  position: relative;
+}
+
+.contact .decor.left {
+  bottom: 0;
+  left: 0;
+}
+
+.contact .decor.inside {
+  bottom: 0;
+  left: 25%;
+}
+
+.contact .decor.right {
+  bottom: 0;
+  right: 0;
+}
+
+.contact h2 {
+  flex: 1;
+  margin: 1rem;
+}
+
+.contact form {
+  flex: 1.5;
+}
+
+.contact .btn {
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .contact .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact .btn {
+    display: block;
+  }
+}

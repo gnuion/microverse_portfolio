@@ -1,0 +1,51 @@
+.about {
+  position: relative;
+}
+
+.about .decor.left {
+  left: 0;
+  top: 8rem;
+}
+
+.about .decor.right {
+  right: 0;
+  top: 0;
+}
+
+.about p {
+  max-width: 50rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.about .btn {
+  margin-top: 2rem;
+}
+
+.about .container {
+  margin-top: 3rem;
+}
+
+.about .card {
+  padding: 3rem 1rem 1rem;
+  display: block;
+  background-color: #ebf0ee;
+  list-style-type: none;
+  border-radius: 0.5rem;
+}
+
+.about .card ul {
+  margin-top: 1rem;
+}
+
+.about .card li {
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: inline-block;
+  color: #36b37e;
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 0.8rem 0.8rem;
+  margin: 0.25rem 0.1rem;
+  list-style-type: none;
+}
