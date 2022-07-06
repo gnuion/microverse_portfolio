@@ -39,43 +39,45 @@
       </nav>
     </header>
     <section class="headline">
-      <h1>
-        Hey there. I'm Jon <br />
-        <span class="highlight">I'm a software developer</span>
-      </h1>
-      <p>
-        I can help you build a product. feature or website. Look through some of
-        my work and experiences! If you like what you see and have a project you
-        need coded, don't hesitate to contact me.
-      </p>
+      <div class="container">
+        <h1>
+          Hey there. I'm Jon <br />
+          <span class="highlight">I'm a software developer</span>
+        </h1>
+        <p>
+          I can help you build a product. feature or website. Look through some
+          of my work and experiences! If you like what you see and have a
+          project you need coded, don't hesitate to contact me.
+        </p>
 
-      <ul class="socials">
-        <li>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-medium"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-angellist"></i></a>
-        </li>
-      </ul>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-medium"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-angellist"></i></a>
+          </li>
+        </ul>
 
-      <a href="/" class="circular-btn"
-        ><i class="fa-solid fa-angle-down"></i
-      ></a>
+        <a href="/" class="circular-btn"
+          ><i class="fa-solid fa-angle-down"></i
+        ></a>
+      </div>
     </section>
 
     <section class="work">
       <h2>My Recent Works</h2>
       <div class="seperator"></div>
-      <div class="container">
+      <div class="grid container">
         <article class="card">
           <img src="./placeholder.jpg" alt="card image" />
           <div class="content">
@@ -158,6 +160,8 @@
     </section>
 
     <section class="about">
+      <img class="decor left" src="./images/about-left.png" alt="origami" />
+      <img class="decor right" src="./images/about-right.png" alt="origami" />
       <h2>About me</h2>
       <div class="seperator"></div>
       <p>
@@ -166,7 +170,7 @@
         need coded, don’t hestiate to contact me.
       </p>
       <a href="#" class="btn">Get My Resume</a>
-      <ul class="container">
+      <ul class="grid container">
         <li class="card">
           <img src="./images/icon-languages.png" alt="" />
           <h3>Languages</h3>
@@ -203,29 +207,35 @@
     </section>
 
     <section class="contact">
-      <h2>
-        I'm always interested in hearing about new projects, so if you'd like to
-        chat please get in touch.
-      </h2>
-      <form action="https://formspree.io/f/xwkydvya" method="post">
-        <input
-          type="text"
-          name="fullname"
-          placeholder="Full name"
-          maxlength="30"
-          required
-        />
-        <input required type="email" name="email" placeholder="Email" />
-        <textarea
-          maxlength="500"
-          required
-          name="content"
-          cols="30"
-          rows="10"
-          placeholder="Enter text here"
-        ></textarea>
-        <button class="btn" type="submit">Get in touch</button>
-      </form>
+      <img class="decor left" src="./images/contact-left.png" alt="test" />
+      <img class="decor inside" src="./images/contact-inside.png" alt="" />
+      <img class="decor right" src="./images/contact-right.png" alt="" />
+
+      <div class="container">
+        <h2>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
+        <form action="https://formspree.io/f/xwkydvya" method="post">
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <input required type="email" name="email" placeholder="Email" />
+          <textarea
+            maxlength="500"
+            required
+            name="content"
+            cols="30"
+            rows="10"
+            placeholder="Enter text here"
+          ></textarea>
+          <button class="btn" type="submit">Get in touch</button>
+        </form>
+      </div>
     </section>
 
     <footer>

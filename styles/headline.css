@@ -3,12 +3,14 @@
   padding-top: 5rem;
   min-height: 80vh;
   background-image: url('../images/headline-background.png');
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .headline p {
   margin: 4rem auto;
+  max-width: 40rem;
 }
 
 .headline li {
@@ -38,3 +40,16 @@
   color: white;
   background-color: #505f79;
 }
+
+@media screen and (min-width: 40rem) {
+  .headline {
+    padding-top: 8rem;
+    background-image: url('../images/headline-background-large.png');
+  }
+}
+
+/* @media screen and (min-width: 60rem) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */

@@ -17,7 +17,6 @@ a {
 section {
   margin: 0 auto;
   padding: 2rem 2rem;
-  max-width: 80rem;
 }
 
 h1 {
@@ -69,6 +68,11 @@ textarea:focus {
   outline: 1px solid #008552;
 }
 
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 .seperator {
   height: 4px;
   width: 48px;
@@ -106,20 +110,36 @@ span.highlight {
   margin: 0 0.3rem;
 }
 
-.container {
+.grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
+.decor {
+  display: none;
+  position: absolute;
+}
+
 @media screen and (min-width: 40rem) {
-  .container {
+  section {
+    margin-bottom: 4rem;
+  }
+
+  .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 60rem) {
-  .container {
+  .grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .decor {
+    display: block;
+    position: absolute;
   }
 }
