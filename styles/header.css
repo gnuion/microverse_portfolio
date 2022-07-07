@@ -19,6 +19,15 @@
   display: none;
 }
 
+.toolbar a {
+ transition:color 0.5s;
+
+}
+
+.toolbar a:hover {
+   color: #008552; 
+}
+
 @media screen and (min-width: 40rem) {
   .toolbar {
     justify-content: center;
