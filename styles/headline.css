@@ -34,6 +34,7 @@
 .circular-btn i {
   display: table-cell;
   vertical-align: middle;
+  transition: color 0.2s;
 }
 
 .circular-btn:hover {
