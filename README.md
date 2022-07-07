@@ -12,9 +12,7 @@
 
 [Live Demo Link](https://gnuion.github.io/microverse_portfolio/)
 
-![screenshot](./screenshot1.png)
-
-**Note: Please view it as mobile**
+![all-devices-example](./all-devices-white.png)
 
 ## Getting Started
 
