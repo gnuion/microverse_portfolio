@@ -31,6 +31,17 @@
   flex: 1.5;
 }
 
+form input, 
+form textarea {
+  transition: padding 1s;
+  
+}
+
+form input:hover, 
+form textarea:hover {
+  padding-left: 3rem; 
+}
+
 .contact .btn {
   margin-bottom: 2rem;
 }
