@@ -31,15 +31,14 @@
   flex: 1.5;
 }
 
-form input, 
+form input,
 form textarea {
   transition: padding 1s;
-  
 }
 
-form input:hover, 
+form input:hover,
 form textarea:hover {
-  padding-left: 3rem; 
+  padding-left: 3rem;
 }
 
 .contact .btn {
