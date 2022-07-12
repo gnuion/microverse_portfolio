@@ -93,6 +93,7 @@ span.highlight {
   padding: 0.75rem;
   border-radius: 0.2rem;
   border: none;
+  transition: box-shadow 0.2s;
 }
 
 .btn:hover {
@@ -116,7 +117,7 @@ span.highlight {
 
 .socials li:hover .fa-brands {
   color: #36b37f;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .grid {

@@ -48,9 +48,3 @@
     background-image: url('../images/headline-background-large.png');
   }
 }
-
-/* @media screen and (min-width: 60rem) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-} */

@@ -1,13 +1,25 @@
 .toolbar {
   background-color: rgb(255, 255, 255);
-  padding: 1rem 2rem;
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
+  left: 0;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.toolbar li {
+  transition: color 0.5s;
+}
+
+.toolbar li:hover {
+  color: #36b37f;
+}
+
+.toolbar li.active {
+  color: #36b37f
 }
 
 .toolbar .logo {
@@ -17,14 +29,6 @@
 
 .toolbar .menu {
   display: none;
-}
-
-.toolbar a {
-  transition: color 0.5s;
-}
-
-.toolbar a:hover {
-  color: #008552;
 }
 
 @media screen and (min-width: 40rem) {

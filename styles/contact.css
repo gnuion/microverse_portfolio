@@ -33,12 +33,12 @@
 
 form input,
 form textarea {
-  transition: padding 1s;
+  transition: padding 0.3s;
 }
 
 form input:hover,
 form textarea:hover {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
 }
 
 .contact .btn {
