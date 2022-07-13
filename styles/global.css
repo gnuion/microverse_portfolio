@@ -147,7 +147,7 @@ span.highlight {
   }
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 90rem) {
   .decor {
     display: block;
     position: absolute;
