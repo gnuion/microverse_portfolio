@@ -93,6 +93,7 @@ span.highlight {
   padding: 0.75rem;
   border-radius: 0.2rem;
   border: none;
+  transition: box-shadow 0.2s;
 }
 
 .btn:hover {
@@ -108,6 +109,15 @@ span.highlight {
   color: #505f79;
   font-size: 1.5rem;
   margin: 0 0.3rem;
+}
+
+.socials li .fa-brands {
+  transition: transform 0.275s, color 1s;
+}
+
+.socials li:hover .fa-brands {
+  color: #36b37f;
+  transform: translateY(-5px);
 }
 
 .grid {

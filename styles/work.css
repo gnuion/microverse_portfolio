@@ -13,18 +13,29 @@
 
 .work .card {
   position: relative;
-  border: solid rgb(202, 202, 202) 1px;
+  outline: solid rgb(202, 202, 202) 2px;
   border-radius: 8px;
   overflow: hidden;
+  transition: outline 0.5s;
+}
+
+.work .card:hover {
+  outline: solid #008552 2px;
 }
 
 .work img {
   height: 33vh;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.4s linear;
 }
 
-.work .card .content {
+.work .card img:hover {
+  transform: scale(1.1);
+  transition: transform 3s linear;
+}
+
+.work .card > div {
   position: relative;
   background-color: rgb(255, 255, 255);
   margin-top: -1rem;
