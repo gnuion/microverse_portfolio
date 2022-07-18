@@ -59,10 +59,6 @@ nav.open .menu {
   font-size: 20px;
 }
 
-.toolbar .menu {
-  display: none;
-}
-
 @media screen and (min-width: 40rem) {
   .toolbar {
     justify-content: center;
