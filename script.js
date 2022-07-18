@@ -12,5 +12,7 @@ toggleBtn.addEventListener('click', () => {
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', () => {
     nav.classList.toggle('open');
+    toggleBtnIcon.classList.toggle('fa-bars');
+    toggleBtnIcon.classList.toggle('fa-x');
   });
 }
