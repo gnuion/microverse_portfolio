@@ -12,9 +12,9 @@ const elementStyle = {
 
 const Portal = (props) => {
   const element = document.createElement('div');
-  element.id = "portal"
+  element.id = 'portal';
 
-  for (let property in elementStyle) {
+  for (const property in elementStyle) {
     element.style[property] = elementStyle[property];
   }
 

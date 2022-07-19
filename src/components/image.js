@@ -1,19 +1,19 @@
 const elementStyle = {
-  maxHeight: "16rem",
-  borderRadius: "0.6rem",
-  width: "100%",
-  objectFit: "cover"
-}
+  maxHeight: '16rem',
+  borderRadius: '0.6rem',
+  width: '100%',
+  objectFit: 'cover',
+};
 
-const Image = ({url}) => {
-  const element = document.createElement('img')
-  element.src = url
+const Image = ({ url }) => {
+  const element = document.createElement('img');
+  element.src = url;
 
-  for (let property in elementStyle) {
+  for (const property in elementStyle) {
     element.style[property] = elementStyle[property];
   }
 
-  return element
-}
+  return element;
+};
 
-export default Image
+export default Image;

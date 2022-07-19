@@ -2,18 +2,13 @@ import Popup from './components/popup.js';
 import projects from '../data.js';
 
 const renderPopup = () => {
-  let popup = null;
-
-  for (let project of projects) {
-    if ('#' + project.id === window.location.hash) {
-      popup = Popup(project);
-      break;
+  for (let i = 0; i < projects.length; i += 1) {
+    if (`#${projects[i].id}` === window.location.hash) {
+      return document.body.appendChild(Popup(projects[i]));
     }
   }
 
-  if (popup) {
-    document.body.appendChild(popup);
-  }
+  return null;
 };
 
 window.addEventListener('load', () => {

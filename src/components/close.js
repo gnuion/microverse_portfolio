@@ -13,13 +13,12 @@ const Close = (closeFunction) => {
 
   element.appendChild(xIcon);
 
-  for (let property in elementStyle) {
+  for (const property in elementStyle) {
     element.style[property] = elementStyle[property];
   }
-  
 
   element.addEventListener('click', () => {
-    closeFunction()
+    closeFunction();
   });
 
   return element;

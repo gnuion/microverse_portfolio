@@ -3,20 +3,20 @@ const toggleBtn = document.getElementById('toggle-btn');
 const toggleBtnIcon = toggleBtn.querySelector('i');
 const navLinks = Array.from(nav.querySelectorAll('li'));
 
-let sectionsAndNavLinks = [];
+const sectionsAndNavLinks = [];
 
 navLinks.forEach((navLink) => {
-  let sectionId = navLink.firstChild.getAttribute('href');
-  let section = document.querySelector(sectionId);
+  const sectionId = navLink.firstChild.getAttribute('href');
+  const section = document.querySelector(sectionId);
   sectionsAndNavLinks.push([section, navLink]);
 });
 
 window.addEventListener('scroll', () => {
   sectionsAndNavLinks.forEach((sectionAndNavlink) => {
-    let section = sectionAndNavlink[0];
-    let navLink = sectionAndNavlink[1];
+    const section = sectionAndNavlink[0];
+    const navLink = sectionAndNavlink[1];
     if (
-      window.scrollY + 50 > section.offsetTop &&
+      section.offsetTop < window.scrollY + 50 &&
       window.scrollY + 50 < section.offsetTop + section.offsetHeight
     ) {
       navLink.className = 'active';

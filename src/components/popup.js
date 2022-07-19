@@ -29,11 +29,11 @@ const Popup = (project) => {
     Button('See Source'),
     Close(() => {
       element.parentElement.remove();
-      history.go(-1);
+      history.back();
     }),
   ];
 
-  for (let property in elementStyle) {
+  for (const property in elementStyle) {
     element.style[property] = elementStyle[property];
   }
 

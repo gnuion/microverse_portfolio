@@ -134,11 +134,6 @@ span.highlight {
   position: absolute;
 }
 
-/* .hidden {
-  display: none;
-} */
-
-
 @media screen and (min-width: 40rem) {
   section {
     margin-bottom: 4rem;
