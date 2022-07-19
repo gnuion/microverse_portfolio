@@ -15,11 +15,12 @@ window.addEventListener('scroll', () => {
   sectionsAndNavLinks.forEach((sectionAndNavlink) => {
     const section = sectionAndNavlink[0];
     const navLink = sectionAndNavlink[1];
-    if (
-      section.offsetTop < window.scrollY + 50 &&
-      window.scrollY + 50 < section.offsetTop + section.offsetHeight
-    ) {
-      navLink.className = 'active';
+    if (section.offsetTop < window.scrollY + 50) {
+      if (window.scrollY + 50 < section.offsetTop + section.offsetHeight) {
+        navLink.className = 'active';
+      } else {
+        navLink.className = '';
+      }
     } else {
       navLink.className = '';
     }

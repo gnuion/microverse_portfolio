@@ -19,7 +19,7 @@ const Popup = (project) => {
     Button('See Source'),
     Close(() => {
       element.parentElement.remove();
-      history.back();
+      window.history.back();
     }),
   ];
 
