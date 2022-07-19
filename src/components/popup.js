@@ -1,39 +1,45 @@
 import Portal from './portal.js';
 import Image from './image.js';
+import Title from './title.js';
+import Content from './content.js';
+import Button from './button.js';
+import Tags from './tags.js';
+import Close from './close.js';
+
+// import Tags from './tags.js';
 
 const elementStyle = {
-  backgroundColor: 'blue',
-  color: 'red',
+  position: 'relative',
+  backgroundColor: 'white',
+  borderRadius: '1rem',
   width: '100%',
-  height: '100%',
+  textAlign: 'left',
+  padding: '2rem',
 };
 
+const Popup = (project) => {
+  const element = document.createElement('div');
 
-const test = document.createElement("p")
-test.innerText = "asdasd"
-
-
-
-const props = {
-  children: [Image({url: "../placeholder.jpg"})]
-}
-
-const Popup = () => {
-  let element = document.createElement('div');
-
-
+  const children = [
+    Image({ url: project.imgUrl }),
+    Tags(project.tags),
+    Title(project.title),
+    Content(project.content),
+    Button('See Live'),
+    Button('See Source'),
+    Close(() => {
+      element.parentElement.remove();
+      history.go(-1);
+    }),
+  ];
 
   for (let property in elementStyle) {
     element.style[property] = elementStyle[property];
   }
 
-  if (props) {
-    if (props.children) {
-      props.children.forEach((child) => {
-        element.appendChild(child);
-      });
-    }
-  }
+  children.forEach((child) => {
+    element.appendChild(child);
+  });
 
   return Portal({ children: [element] });
 };

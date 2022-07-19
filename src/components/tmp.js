@@ -17,25 +17,9 @@ Portal({children: [portal]})
 
 
 
-// let popup = document.createElement('div');
-// portal.appendChild(popup);
-// portal.className = "popup"
 
-// popup.addEventListener('scroll', (event) => {
-//   event.stopPropagation();
-// });
 
-// const img = document.createElement('img');
-// img.setAttribute('src', '');
-// popup.appendChild(img);
 
-// let title = document.createElement('h2');
-// title.textContent = '';
-// popup.appendChild(title);
-
-// let content = document.createElement('p');
-// content.textContent = '';
-// popup.appendChild(content);
 
 // let tags = document.createElement('ul');
 // tags.className = 'tags';
