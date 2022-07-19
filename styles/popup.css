@@ -1,0 +1,27 @@
+div.portal {
+  position: fixed;
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+div.popup {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+div.popup img {
+  max-height: 16rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  object-fit: cover;
+}

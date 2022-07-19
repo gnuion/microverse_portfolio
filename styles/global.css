@@ -5,6 +5,8 @@
 }
 
 body {
+  box-sizing: border-box;
+
   color: #172b4d;
   text-align: center;
 }
@@ -94,6 +96,7 @@ span.highlight {
   border-radius: 0.2rem;
   border: none;
   transition: box-shadow 0.2s;
+  margin: 0.5rem;
 }
 
 .btn:hover {
@@ -130,6 +133,11 @@ span.highlight {
   display: none;
   position: absolute;
 }
+
+/* .hidden {
+  display: none;
+} */
+
 
 @media screen and (min-width: 40rem) {
   section {

@@ -23,7 +23,6 @@ window.addEventListener('scroll', () => {
     } else {
       navLink.className = '';
     }
-    console.log(section, 'offset top', section.offsetTop);
   });
 });
 
