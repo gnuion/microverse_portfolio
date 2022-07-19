@@ -2,7 +2,7 @@ import Portal from './portal.js';
 import Image from './image.js';
 import Title from './title.js';
 import Content from './content.js';
-import Button from './button.js';
+import Buttons from './buttons.js';
 import Tags from './tags.js';
 import Close from './close.js';
 
@@ -15,8 +15,7 @@ const Popup = (project) => {
     Title(project.title),
     Tags(project.tags),
     Content(project.content),
-    Button('See Live'),
-    Button('See Source'),
+    Buttons(),
     Close(() => {
       element.parentElement.remove();
       window.history.back();
