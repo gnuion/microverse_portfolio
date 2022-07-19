@@ -2,6 +2,7 @@ const elementStyle = {};
 
 const Title = (text) => {
   const element = document.createElement('h2');
+  element.className = 'title';
   element.innerText = text;
 
   for (const property in elementStyle) {

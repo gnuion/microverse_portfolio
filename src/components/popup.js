@@ -6,24 +6,14 @@ import Button from './button.js';
 import Tags from './tags.js';
 import Close from './close.js';
 
-// import Tags from './tags.js';
-
-const elementStyle = {
-  position: 'relative',
-  backgroundColor: 'white',
-  borderRadius: '1rem',
-  width: '100%',
-  textAlign: 'left',
-  padding: '2rem',
-};
-
 const Popup = (project) => {
   const element = document.createElement('div');
+  element.className = 'popup';
 
   const children = [
     Image({ url: project.imgUrl }),
-    Tags(project.tags),
     Title(project.title),
+    Tags(project.tags),
     Content(project.content),
     Button('See Live'),
     Button('See Source'),
@@ -32,10 +22,6 @@ const Popup = (project) => {
       history.back();
     }),
   ];
-
-  for (const property in elementStyle) {
-    element.style[property] = elementStyle[property];
-  }
 
   children.forEach((child) => {
     element.appendChild(child);

@@ -1,0 +1,48 @@
+#portal {
+  padding: 2rem;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background: rgba(100, 100, 100, 0.5);
+}
+
+div.popup {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  text-align: left;
+  padding: 2rem;
+}
+
+div.popup img {
+  max-height: 16rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+div.popup .close {
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+div.popup .title {
+  margin-top: 1.5rem;
+}
+
+div.popup .tags {
+  justify-content: flex-start;
+}
+
+div.popup .btn {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
