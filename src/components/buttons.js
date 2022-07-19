@@ -1,6 +1,6 @@
 import Button from './button.js';
 
-const Buttons = (tags) => {
+const Buttons = () => {
   const children = [Button('See Live'), Button('See Source')];
 
   const element = document.createElement('div');
