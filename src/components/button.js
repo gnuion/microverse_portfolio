@@ -1,5 +1,6 @@
-const Button = (text, iconClass) => {
+const Button = (text, iconClass, link) => {
   const element = document.createElement('a');
+  element.setAttribute('href', link);
   element.className = 'btn';
   element.innerText = text;
 
