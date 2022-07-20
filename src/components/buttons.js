@@ -2,8 +2,8 @@ import Button from './button.js';
 
 const Buttons = () => {
   const children = [
-    Button('See Live', 'youtube'),
-    Button('See Source', 'facebook'),
+    Button('See Live', 'fa-solid fa-rss'),
+    Button('See Source', 'fa-brands fa-github'),
   ];
 
   const element = document.createElement('div');
