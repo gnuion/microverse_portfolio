@@ -40,6 +40,7 @@ div.popup .close {
   right: 3.5rem;
   font-size: 1.8rem;
   color: white;
+  cursor: pointer;
 }
 
 div.popup .title {
