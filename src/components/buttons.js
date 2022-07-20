@@ -5,7 +5,7 @@ const Buttons = () => {
     Button(
       'See Live',
       'fa-solid fa-arrow-up-right-from-square',
-      'https://www.example.com'
+      'https://www.example.com',
     ),
     Button('See Source', 'fa-brands fa-github', 'https://www.github.com'),
   ];
