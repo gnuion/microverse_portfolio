@@ -32,7 +32,7 @@
       <nav id="nav">
         <span id="toggle-btn"><i class="fa-solid fa-bars"></i></span>
         <ul class="menu">
-          <li class="active"><a href="#work">Portfolio</a></li>
+          <li><a href="#work">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -102,9 +102,7 @@
           </li>
         </ul>
         <a href="#work" class="circular-btn"
-          ><i
-            class="fa-solid fa-angle-down"
-          ></i>
+          ><i class="fa-solid fa-angle-down"></i>
           <span class="sr-only">jump to main</span>
         </a>
       </div>
@@ -117,20 +115,32 @@
           <img src="./placeholder.jpg" alt="card image" />
           <div>
             <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul>
+            <ul class="tags">
               <li>Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
               <li>HTML</li>
             </ul>
-            <a class="btn" href="#">See Project</a>
+            <a class="btn" href="#1">See Project</a>
           </div>
         </article>
         <article class="card">
-          <img class="card-image" src="./placeholder.jpg" alt="card image" />
+          <img class="card-image" src="./placeholder_2.jpg" alt="card image" />
+          <div>
+            <h3>Keeping track of hundreds of components</h3>
+            <ul class="tags">
+              <li>Ruby on Rails</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a class="btn" href="#2">See Project</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="./placeholder.jpg" alt="card image" />
           <div>
             <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul class="categories">
+            <ul class="tags">
               <li>Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -143,7 +153,7 @@
           <img src="./placeholder.jpg" alt="card image" />
           <div>
             <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul>
+            <ul class="tags">
               <li>Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -156,7 +166,7 @@
           <img src="./placeholder.jpg" alt="card image" />
           <div>
             <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul>
+            <ul class="tags">
               <li>Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -169,20 +179,7 @@
           <img src="./placeholder.jpg" alt="card image" />
           <div>
             <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul>
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-            <a class="btn" href="#">See Project</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="./placeholder.jpg" alt="card image" />
-          <div>
-            <h3>Multi-Post Stories Gain+Glory</h3>
-            <ul>
+            <ul class="tags">
               <li>Ruby on Rails</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -240,9 +237,21 @@
       </ul>
     </section>
     <section id="contact" class="contact">
-      <img class="decor left" src="./images/contact-left.png" alt="origami decor left" />
-      <img class="decor inside" src="./images/contact-inside.png" alt="origami decor inside" />
-      <img class="decor right" src="./images/contact-right.png" alt="origami decor right" />
+      <img
+        class="decor left"
+        src="./images/contact-left.png"
+        alt="origami decor left"
+      />
+      <img
+        class="decor inside"
+        src="./images/contact-inside.png"
+        alt="origami decor inside"
+      />
+      <img
+        class="decor right"
+        src="./images/contact-right.png"
+        alt="origami decor right"
+      />
 
       <div class="container">
         <h2>
@@ -328,6 +337,6 @@
     </footer>
 
     <script src="./script.js"></script>
-    
+    <script type="module" src="./src/app.js"></script>
   </body>
 </html>
