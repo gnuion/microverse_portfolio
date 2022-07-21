@@ -1,7 +1,6 @@
 const form = document.querySelector('form');
 
-const email = form.elements['email'];
-email.style.backgroundColor = 'red';
+const email = form.elements.email;
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -10,11 +9,11 @@ form.addEventListener('submit', (event) => {
     email.setCustomValidity('Email should be all lowercase!');
     email.reportValidity();
   } else {
-    form.submit()
+    form.submit();
   }
 });
 
-email.addEventListener('input', (event) => {
+email.addEventListener('input', () => {
   if (email.value !== email.value.toLocaleLowerCase()) {
     email.setCustomValidity('Email should be all lowercase!');
     email.reportValidity();
