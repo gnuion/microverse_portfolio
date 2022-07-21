@@ -1,3 +1,7 @@
+const form = document.querySelector('form');
+
+const { fullname, email, content } = form.elements;
+
 let formStore = { fullname: '', email: '', content: '' };
 
 if (!localStorage.getItem('formStore')) {

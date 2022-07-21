@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 
-const { fullname, email, button, content } = form.elements;
+const { email, button } = form.elements;
 
 // Form validation
 const errSpan = document.createElement('p');
