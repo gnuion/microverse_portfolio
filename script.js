@@ -3,16 +3,42 @@ const toggleBtn = document.getElementById('toggle-btn');
 const toggleBtnIcon = toggleBtn.querySelector('i');
 const navLinks = Array.from(nav.querySelectorAll('li'));
 
-toggleBtn.addEventListener('click', () => {
+const sectionsAndNavLinks = [];
+
+navLinks.forEach((navLink) => {
+  const sectionId = navLink.firstChild.getAttribute('href');
+  const section = document.querySelector(sectionId);
+  sectionsAndNavLinks.push([section, navLink]);
+});
+
+window.addEventListener('scroll', () => {
+  sectionsAndNavLinks.forEach((sectionAndNavlink) => {
+    const section = sectionAndNavlink[0];
+    const navLink = sectionAndNavlink[1];
+    if (section.offsetTop < window.scrollY + 100) {
+      if (window.scrollY + 100 < section.offsetTop + section.offsetHeight) {
+        navLink.className = 'active';
+      } else {
+        navLink.className = '';
+      }
+    } else {
+      navLink.className = '';
+    }
+  });
+});
+
+const toggleMenu = () => {
   toggleBtnIcon.classList.toggle('fa-bars');
   toggleBtnIcon.classList.toggle('fa-x');
   nav.classList.toggle('open');
-});
+};
+
+toggleBtn.addEventListener('click', () => toggleMenu());
 
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', () => {
-    nav.classList.toggle('open');
-    toggleBtnIcon.classList.toggle('fa-bars');
-    toggleBtnIcon.classList.toggle('fa-x');
+    if (nav.classList.contains('open')) {
+      toggleMenu();
+    }
   });
 }

@@ -1,0 +1,113 @@
+#portal {
+  padding: 2rem;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background-color: rgba(100, 100, 100, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+div.popup {
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+  max-width: 70rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div.popup img {
+  order: 0;
+  max-height: 16rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+div.popup .close {
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+div.popup .title {
+  order: 1;
+  margin-top: 1.5rem;
+  max-width: 30rem;
+}
+
+div.popup .content {
+  order: 3;
+}
+
+div.popup .tags {
+  width: 100%;
+  order: 2;
+  justify-content: flex-start;
+}
+
+div.popup .btn {
+  margin: 0 1rem 0 0;
+  border-radius: 0.6rem;
+}
+
+div.popup .btn:hover {
+  cursor: pointer;
+}
+
+div.popup .btns {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  order: 4;
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 60rem) {
+  div.popup img {
+    margin-top: 4rem;
+    max-height: 36rem;
+  }
+
+  div.popup .close {
+    top: 2rem;
+    right: 2rem;
+    background-color: #ebecf0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+  }
+
+  div.popup .close i {
+    color: rgb(73, 73, 73);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div.popup .tags {
+    order: 3;
+  }
+
+  div.popup .btn {
+    margin: 0 0 0 1rem;
+  }
+
+  div.popup .btns {
+    order: 2;
+  }
+}
