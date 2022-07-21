@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLocaleLowerCase()) {
     errSpan.innerText = 'Email should be all lowercase!';
   } else {
-    errSpan.innerText = ''
+    errSpan.innerText = '';
     form.submit();
   }
 });
