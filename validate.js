@@ -2,6 +2,7 @@ const form = document.querySelector('form');
 
 const { email, button } = form.elements;
 
+// Form validation
 const errSpan = document.createElement('p');
 errSpan.style.textAlign = 'left';
 errSpan.style.color = 'red';
